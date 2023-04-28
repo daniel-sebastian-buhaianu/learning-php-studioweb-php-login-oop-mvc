@@ -1,0 +1,35 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.5
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 10, 2011 at 08:20 PM
+-- Server version: 5.1.44
+-- PHP Version: 5.3.2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `oop_login`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(32) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `users`
+--
+-- this creates an entry in the 'users' table with a username of 'admin'
+-- and a password of 'admin', assuming the salt is 'j4H9?s0d'
+
+INSERT INTO `users` VALUES(1, 'admin', '281ff8a6813d0eab69b165aa7417d811');
